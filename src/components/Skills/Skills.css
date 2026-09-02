@@ -10,6 +10,7 @@
   background: #ffffff;
 
   box-sizing: border-box;
+  
 }
 
 
@@ -18,10 +19,17 @@
 ========================================= */
 
 .skills-container {
-  width: 100%;
-  max-width: 1200px;
-
+  width:75vw;;
+  /* max-width: 1200px; */
+  height : 85vh;
   margin: 0 auto;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+
+
 }
 
 
@@ -32,16 +40,18 @@
 .skills-heading {
   text-align: center;
 
-  max-width: 650px;
+  width:100%;
 
   margin: 0 auto 60px;
+  background: #ffc83d;
+  border-radius: 35px;
 }
 
 
 .skills-subtitle {
   margin: 0 0 12px;
 
-  color: #d99d00;
+  color: #080808;
 
   font-size: 14px;
 

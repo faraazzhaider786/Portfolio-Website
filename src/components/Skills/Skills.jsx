@@ -57,11 +57,7 @@ const skills = [
     category: "Tools",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
-  {
-    name: "Vite",
-    category: "Tools",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
-  },
+  
   {
   name: "WordPress",
   category: "CMS",
