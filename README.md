@@ -1,21 +1,137 @@
-<<<<<<< HEAD
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built to showcase my skills, projects, education, professional experience, and software engineering journey.
 
-Currently, two official plugins are available:
+The portfolio is designed with a clean and minimal interface using a yellow, white, and black visual theme.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Website
 
-## React Compiler
+[Visit My Portfolio](https://farazhaider.me/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Responsive design for desktop, tablet, and mobile
+- Modern single-page portfolio layout
+- Hero section with social links and CV download
+- About Me section
+- Skills and technologies section
+- Professional experience section
+- Projects showcase
+- Education section
+- Contact section
+- Downloadable CV
+- GitHub and LinkedIn links
+- Smooth navigation between sections
+- Interactive hover effects and animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Portfolio-Website
-Portfolio website to show my personal portfolio i.e my projects, my experience , my services etc.
->>>>>>> 3bd50d56386ee7986ffa2fc598316f89750699dc
+## 🛠️ Technologies Used
+
+### Frontend
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+
+### Development Tools
+
+- Vite
+- Git
+- GitHub
+- Visual Studio Code
+
+## 📂 Project Structure
+
+```text
+portfolio/
+│
+├── public/
+│   ├── projects/
+│   └── resume.pdf
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar/
+│   │   ├── Hero/
+│   │   ├── About/
+│   │   ├── Skills/
+│   │   ├── Experience/
+│   │   ├── Projects/
+│   │   ├── Education/
+│   │   └── Contact/
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/faraazzhaider786/your-portfolio-repository.git
+
+### 2. Navigate to the project directory
+
+``` cd your-portfolio-repository ```
+
+### 3. Install dependencies
+
+``` npm install ```
+
+### 4. Start the development server
+
+``` npm run dev ```
+
+## 📦 Build for Production
+
+- To create a production build:
+
+``` npm run build ```
+
+- To preview the production build:
+
+``` npm run preview ```
+
+## 🎨 Design
+
+The portfolio uses a minimal visual style based on:
+
+- Yellow
+- White
+- Black
+
+The design focuses on readability, clean layouts, responsive components, and subtle interactive effects.
+
+## 📱 Responsive Design
+
+The website is designed to work across different screen sizes, including:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+## 👨‍💻 About Me
+
+- I'm a Software Engineering student interested in web development, cloud computing, and emerging technologies.
+
+- I enjoy building practical applications and continuously developing my technical skills through real-world projects.
+
+## 🔗 Connect With Me
+- LinkedIn: https://www.linkedin.com/in/faraazzhaider786/
+- GitHub: https://github.com/faraazzhaider786
+
+
+## 📄 License
+
+- This project is created for personal portfolio and educational purposes.
