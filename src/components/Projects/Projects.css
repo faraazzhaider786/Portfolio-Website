@@ -1,0 +1,689 @@
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+/* =========================================
+   YELLOW HEADER
+========================================= */
+
+.projects-header {
+  position: relative;
+  min-height: 150px;
+  width: 70%;
+  padding: 10px 2% 20px;
+  
+ 
+
+  background: #ffc83d;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   HEADER TOP
+========================================= */
+
+.projects-header-top {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projects-brand {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.projects-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.menu-lines {
+  width: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-lines span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #000000;
+}
+
+
+/* =========================================
+   HEADER CONTENT
+========================================= */
+
+.projects-heading-container {
+  position: relative;
+  z-index: 3;
+
+  max-width: 1400px;
+  margin: 85px auto 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+}
+
+.projects-heading {
+  align-self: center;
+}
+
+.projects-label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-bottom: 18px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.projects-label span {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: #000000;
+}
+
+.projects-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(40px, 5vw, 70px);
+  line-height: 0.88;
+
+  letter-spacing: -4px;
+}
+
+.projects-heading h2 span {
+  color: #ffffff;
+}
+
+.projects-intro {
+  max-width: 500px;
+
+  justify-self: end;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: rgba(0, 0, 0, 0.75);
+}
+
+
+/* =========================================
+   HEADER DECORATIONS
+========================================= */
+
+.header-circle {
+  position: absolute;
+
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+}
+
+.header-circle-one {
+  width: 250px;
+  height: 250px;
+
+  right: -90px;
+  top: -100px;
+}
+
+.header-circle-two {
+  width: 100px;
+  height: 100px;
+
+  left: 40%;
+  top: 130px;
+}
+
+.header-dots {
+  position: absolute;
+
+  left: 48%;
+  top: 45px;
+
+  width: 55px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+
+  opacity: 0.3;
+}
+
+.header-dots span {
+  width: 5px;
+  height: 5px;
+
+  background: #000000;
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   PROJECTS CONTAINER
+========================================= */
+
+.projects-container {
+  width: 90%;
+  max-width: 1400px;
+  
+
+  margin: 0 auto;
+  padding: 55px 0 90px;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+  position: relative;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+  transition:
+    background-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.project-card:hover {
+  background: #ffc83d;
+
+  transform: translateY(-8px);
+
+  border-color: #ffc83d;
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image-container {
+  position: relative;
+
+  /* margin: 13px; */
+
+  height: 205px;
+  width: 100%;
+
+  border-radius: 13px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.35s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.project-number {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.project-card:hover .project-number {
+  background: #000000;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+  padding: 5px 20px 20px;
+}
+
+.project-content h3 {
+  margin: 8px 0 10px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+  line-height: 1.2;
+
+  color: #000000;
+}
+
+.project-content p {
+  min-height: 68px;
+
+  margin: 0 0 18px;
+
+  font-size: 13px;
+  line-height: 1.65;
+
+  color: #666666;
+
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-content p {
+  color: #222222;
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  min-height: 58px;
+
+  margin-bottom: 18px;
+}
+
+.project-technologies span {
+  height: fit-content;
+
+  padding: 7px 10px;
+
+  background: #f3f3f3;
+
+  border: 1px solid #e2e2e2;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #333333;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-card:hover .project-technologies span {
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #000000;
+}
+
+
+/* =========================================
+   PROJECT BUTTONS
+========================================= */
+
+.project-buttons {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+
+/* Live Demo */
+
+.project-live-button,
+.project-github-button {
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.project-live-button {
+  background: #ffffff;
+
+  border: 1px solid #cccccc;
+
+  color: #000000;
+}
+
+.project-live-button:hover {
+  transform: translateY(-2px);
+  border-color: #000000;
+}
+
+
+/* GitHub */
+
+.project-github-button {
+  background: #000000;
+
+  border: 1px solid #000000;
+
+  color: #ffffff;
+}
+
+.project-github-button:hover {
+  transform: translateY(-2px);
+
+  background: #ffffff;
+
+  color: #000000;
+}
+
+.button-arrow {
+  font-size: 16px;
+}
+
+.github-symbol {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   MORE PROJECTS
+========================================= */
+
+.projects-more {
+  margin-top: 65px;
+
+  padding: 35px 40px;
+
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.projects-more p {
+  margin-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  color: #777777;
+}
+
+.projects-more h3 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 25px;
+}
+
+.projects-more h3 span {
+  color: #ffc83d;
+}
+
+.projects-github-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 14px 22px;
+
+  background: #000000;
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.projects-github-link:hover {
+  background: #ffc83d;
+  color: #000000;
+
+  transform: translateY(-3px);
+}
+
+.projects-github-link span {
+  font-size: 18px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-heading-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-image-container {
+    height: 220px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .projects-header {
+    min-height: 500px;
+
+    padding: 25px 6% 55px;
+  }
+
+  .projects-heading-container {
+    margin-top: 75px;
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .projects-heading h2 {
+    font-size: 65px;
+    letter-spacing: -3px;
+  }
+
+  .projects-intro {
+    justify-self: start;
+
+    font-size: 15px;
+  }
+
+  .projects-container {
+    width: 90%;
+
+    padding-top: 35px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .project-image-container {
+    height: 230px;
+  }
+
+  .project-content h3 {
+    font-size: 25px;
+  }
+
+  .project-content p {
+    min-height: auto;
+  }
+
+  .projects-more {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 30px 5px;
+  }
+
+  .projects-github-link {
+    width: 100%;
+
+    justify-content: center;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .projects-heading h2 {
+    font-size: 55px;
+  }
+
+  .project-image-container {
+    height: 190px;
+  }
+
+  .project-content {
+    padding: 5px 16px 17px;
+  }
+
+  .project-buttons {
+    grid-template-columns: 1fr;
+  }
+}

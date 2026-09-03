@@ -23,8 +23,6 @@
   /* max-width: 1200px; */
   height : 85vh;
   margin: 0 auto;
-  border-top:1px solid black;
-  border-left:1px solid black;
   border-radius: 30px;
   padding: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
@@ -45,6 +43,7 @@
   margin: 0 auto 60px;
   background: #ffc83d;
   border-radius: 35px;
+  padding: 10px 2% 20px;
 }
 
 

@@ -1,0 +1,608 @@
+/* ========================================
+   EDUCATION SECTION
+======================================== */
+
+.education-section {
+  position: relative;
+
+  padding: 110px 7%;
+
+  background: #fafafa;
+
+  overflow: hidden;
+}
+
+.education-container {
+  position: relative;
+
+  padding: 10px;
+
+  border-radius: 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+
+  width: 80vw;
+  height : 85vh;
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.education-header {
+  text-align: center;
+
+  max-width: 650px;
+
+  margin: 0 auto 80px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.education-subtitle {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #777777;
+
+  margin-bottom: 14px;
+}
+
+.education-header h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(48px, 6vw, 68px);
+
+  line-height: 1;
+
+  color: #000000;
+
+  margin: 0 0 22px;
+}
+
+.education-header h2 span {
+  color: #ffc83d;
+}
+
+.education-intro {
+  max-width: 550px;
+
+  margin: 0 auto;
+
+  color: #666666;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   TIMELINE
+======================================== */
+
+.education-timeline {
+  position: relative;
+
+  width: 100%;
+
+  z-index: 2;
+}
+
+.education-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 66px;
+
+  top: 30px;
+
+  bottom: 30px;
+
+  width: 2px;
+
+  background: #dedede;
+}
+
+
+/* ========================================
+   EDUCATION ITEM
+======================================== */
+
+.education-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 135px 1fr;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   TIMELINE SIDE
+======================================== */
+
+.timeline-side {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  z-index: 3;
+}
+
+.timeline-number {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #888888;
+
+  margin-bottom: 14px;
+}
+
+.timeline-dot {
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 4px solid #ffc83d;
+
+  box-shadow: 0 0 0 5px #fafafa;
+}
+
+.education-item.current .timeline-dot {
+  background: #ffc83d;
+
+  border-color: #000000;
+}
+
+
+/* ========================================
+   EDUCATION CARD
+======================================== */
+
+.education-card {
+  position: relative;
+
+  width : 80%;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 34px 38px;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+  border-color: #ffc83d;
+}
+
+
+/* Yellow top border for current education */
+
+.education-item.current .education-card {
+  border-top: 5px solid #ffc83d;
+}
+
+
+/* ========================================
+   CARD TOP
+======================================== */
+
+.education-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 16px;
+}
+
+.education-date {
+  display: inline-block;
+
+  padding: 7px 12px;
+
+  background: #fff4c9;
+
+  color: #000000;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.current-badge {
+  padding: 7px 12px;
+
+  background: #000000;
+
+  color: #ffffff;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* ========================================
+   CARD CONTENT
+======================================== */
+
+.education-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 28px;
+
+  line-height: 1.2;
+
+  color: #000000;
+
+  margin: 0 0 8px;
+
+  text-transform: capitalize;
+}
+
+.education-card h4 {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #777777;
+
+  margin: 0 0 17px;
+}
+
+.education-card p {
+  max-width: 700px;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #666666;
+
+  margin: 0;
+}
+
+
+/* ========================================
+   EDUCATION TAGS
+======================================== */
+
+.education-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 23px;
+}
+
+.education-tags span {
+  padding: 7px 11px;
+
+  background: #f5f5f5;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  color: #555555;
+
+  transition: all 0.25s ease;
+}
+
+.education-tags span:hover {
+  background: #ffc83d;
+
+  color: #000000;
+}
+
+
+/* ========================================
+   SEMESTER HIGHLIGHT
+======================================== */
+
+.semester-highlight {
+  position: absolute;
+
+  right: 30px;
+
+  bottom: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 105px;
+
+  height: 105px;
+
+  border-radius: 50%;
+
+  background: #ffc83d;
+
+  color: #000000;
+
+  transform: rotate(5deg);
+
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover .semester-highlight {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.semester-highlight strong {
+  font-size: 25px;
+
+  line-height: 1;
+
+  margin-bottom: 5px;
+}
+
+.semester-highlight span {
+  width: 70px;
+
+  text-align: center;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  line-height: 1.3;
+}
+
+
+/* ========================================
+   BACKGROUND DECORATION
+======================================== */
+
+.education-decoration {
+  position: absolute;
+
+  right: -80px;
+
+  top: 180px;
+
+  width: 280px;
+  height: 280px;
+
+  border: 2px solid rgba(255, 200, 61, 0.2);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  pointer-events: none;
+}
+
+.education-decoration::before {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  border: 2px solid rgba(0, 0, 0, 0.06);
+
+  border-radius: 50%;
+}
+
+.education-decoration span {
+  font-size: 90px;
+
+  font-weight: 800;
+
+  color: rgba(255, 200, 61, 0.16);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .education-section {
+    padding: 90px 5%;
+  }
+
+  .education-header {
+    margin-bottom: 60px;
+  }
+
+  .education-item {
+    grid-template-columns: 90px 1fr;
+
+    gap: 20px;
+  }
+
+  .education-timeline::before {
+    left: 44px;
+  }
+
+  .semester-highlight {
+    position: static;
+
+    width: 90px;
+    height: 90px;
+
+    margin-top: 25px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .education-section {
+    padding: 75px 20px;
+  }
+
+  .education-header {
+    margin-bottom: 50px;
+  }
+
+  .education-header h2 {
+    font-size: 48px;
+  }
+
+  .education-intro {
+    font-size: 14px;
+  }
+
+  .education-item {
+    grid-template-columns: 35px 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+  }
+
+  .education-timeline::before {
+    left: 17px;
+
+    top: 25px;
+
+    bottom: 25px;
+  }
+
+  .timeline-number {
+    display: none;
+  }
+
+  .timeline-dot {
+    width: 15px;
+    height: 15px;
+
+    border-width: 3px;
+  }
+
+  .education-card {
+    padding: 25px 22px;
+
+    border-radius: 15px;
+  }
+
+  .education-card-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-bottom: 15px;
+  }
+
+  .education-card h3 {
+    font-size: 23px;
+  }
+
+  .education-card p {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+  .education-tags {
+    margin-top: 18px;
+  }
+
+  .semester-highlight {
+    width: 80px;
+    height: 80px;
+
+    margin: 20px 0 0 auto;
+  }
+
+  .semester-highlight strong {
+    font-size: 21px;
+  }
+
+  .semester-highlight span {
+    font-size: 7px;
+  }
+
+  .education-decoration {
+    width: 180px;
+    height: 180px;
+
+    right: -110px;
+
+    top: 100px;
+  }
+
+  .education-decoration::before {
+    width: 120px;
+    height: 120px;
+  }
+
+  .education-decoration span {
+    font-size: 55px;
+  }
+
+}
