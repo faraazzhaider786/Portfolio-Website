@@ -1,12 +1,16 @@
 import React from "react";
 import "./Projects.css";
+import freshAndDirect from "../../assets/fresh-and-direct.png";
+import portfolioWebsite from "../../assets/portfolio-website.png";
+import travelAndTourism from "../../assets/pak-travel-and-tourism.png";
+import pacmanGame from "../../assets/pacman-game.jpg";
 
 const projects = [
   {
-    title: "Ministry of Tourism Website",
+    title: "Pakistan Travel and Tourism Portal",
     description:
       "A modern tourism website designed to showcase Pakistan's destinations, attractions, festivals, and tourism information.",
-    image: "/projects/tourism.png",
+    image: travelAndTourism,
     technologies: [
       "React.js",
       "JavaScript",
@@ -17,57 +21,10 @@ const projects = [
       "MongoDB",
     ],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/faraazzhaider786/Pakistan-Travel-and-Tourism-Portal.git",
   },
-
   {
-    title: "E-Commerce Grocery Store",
-    description:
-      "A responsive grocery e-commerce website where users can browse products, manage their cart, and interact with an online shopping interface.",
-    image: "/projects/grocery.png",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-    ],
-    liveLink: "#",
-    githubLink: "#",
-  },
-
-  {
-    title: "Personal Portfolio",
-    description:
-      "A modern responsive portfolio website created to showcase my skills, projects, education, and professional experience.",
-    image: "/projects/portfolio.png",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "CSS",
-      "Vite",
-    ],
-    liveLink: "#",
-    githubLink: "#",
-  },
-
-  {
-    title: "Project Management System",
-    description:
-      "A web-based system designed to manage projects, activities, work plans, and related project information.",
-    image: "/projects/project-management.png",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-    ],
-    liveLink: "#",
-    githubLink: "#",
-  },
-
-  {
-    title: "Nearby Attractions",
+    title: "Research Project Management System",
     description:
       "A location-based tourism feature that allows users to discover attractions near their current location and navigate to selected places.",
     image: "/projects/nearby.png",
@@ -80,6 +37,53 @@ const projects = [
     liveLink: "#",
     githubLink: "#",
   },
+
+  {
+    title: "Fresh and Direct - Grocery E-commerce Website",
+    description:
+      "A responsive grocery e-commerce website where users can browse products, manage their cart, and interact with an online shopping interface.",
+    image: freshAndDirect,
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    
+    ],
+    liveLink: "https://fresh-and-direct.vercel.app/",
+    githubLink: "https://github.com/faraazzhaider786/Fresh_and_Direct_Frontend.git",
+  },
+
+  {
+    title: "Personal Portfolio",
+    description:
+      "A modern responsive portfolio website created to showcase my skills, projects, education, and professional experience.",
+    image: portfolioWebsite,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "CSS",
+      "Vite",
+    ],
+    liveLink: "https://farazhaider.me",
+    githubLink: "https://github.com/faraazzhaider786/Portfolio-Website.git",
+  },
+
+  {
+    title: "Pacman Game",
+    description:
+      "A fully playable Pac-Man game developed in Java using object-oriented programming and Java Swing. The game features real-time movement, ghost AI, scoring, lives, wrap-around tunnels, and game reset mechanics.",
+    image: pacmanGame,
+    technologies: [
+      "Java",
+      "OOP",
+      "Java Swing ",
+      "GUI Development",
+      "Event Handling",
+    ],
+    liveLink: "#",
+    githubLink: "https://github.com/faraazzhaider786/Pacman-Java-Game.git",
+  },
+
 
   {
     title: "Web Application",

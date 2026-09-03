@@ -86,15 +86,6 @@ const About = () => {
           </div>
 
 
-          {/* CV BUTTON */}
-          <a
-            href="/resume.pdf"
-            download
-            className="about-cv-button"
-          >
-            Download CV
-            <span>→</span>
-          </a>
 
         </div>
 

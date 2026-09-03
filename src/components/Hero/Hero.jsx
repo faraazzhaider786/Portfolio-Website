@@ -42,7 +42,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/FaraazHaiderCV.docx"
               download
               className="cv-button-hero"
             >

@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Right Side */}
         <div className="navbar-actions">
           <a
-            href="/resume.pdf"
+            href="FaraazHaiderCV.docx"
             download
             className="cv-button"
           >
