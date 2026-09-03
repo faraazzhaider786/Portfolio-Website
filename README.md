@@ -69,7 +69,7 @@ portfolio/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
-
+```
 
 ## 🚀 Getting Started
 
@@ -79,7 +79,7 @@ Follow these steps to run the project locally.
 
 ```bash
 git clone https://github.com/faraazzhaider786/your-portfolio-repository.git
-
+```
 ### 2. Navigate to the project directory
 
 ``` cd your-portfolio-repository ```
