@@ -69,7 +69,7 @@ portfolio/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
-
+```
 
 ## 🚀 Getting Started
 
