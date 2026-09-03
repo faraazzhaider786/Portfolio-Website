@@ -79,7 +79,7 @@ Follow these steps to run the project locally.
 
 ```bash
 git clone https://github.com/faraazzhaider786/your-portfolio-repository.git
-
+```
 ### 2. Navigate to the project directory
 
 ``` cd your-portfolio-repository ```
