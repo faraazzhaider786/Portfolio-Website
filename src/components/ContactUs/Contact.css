@@ -180,6 +180,38 @@
   font-size: 21px;
 }
 
+.profile-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.profile-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+.linkedin-icon {
+  background: #e8f1fb;
+}
+
+.github-icon {
+  background: #f1f1f1;
+}
+
+.gmail-icon {
+  background: #fff0ef;
+}
+
+.whatsapp-icon {
+  background: #e9f9ef;
+}
 
 /* ================================
    PROFILE TEXT

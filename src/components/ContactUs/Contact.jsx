@@ -1,6 +1,20 @@
 import React from "react";
 import "./Contact.css";
 
+
+const socialIcons = {
+  linkedin:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg",
+
+  github:
+    "https://cdn.simpleicons.org/github",
+
+  whatsapp:
+    "https://cdn.simpleicons.org/whatsapp",
+
+  gmail:
+    "https://cdn.simpleicons.org/gmail",
+};
 const Contact = () => {
   return (
     <section className="contact-section" id="contact">
@@ -36,62 +50,93 @@ const Contact = () => {
 
             <div className="social-profiles">
 
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com/in/faraazzhaider786"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="profile-card"
-              >
-                <div className="profile-icon linkedin-icon">
-                  in
-                </div>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/faraazzhaider786/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="profile-card"
+  >
+    <div className="profile-icon linkedin-icon">
+      <img
+        src={socialIcons.linkedin}
+        alt="LinkedIn"
+      />
+    </div>
 
-                <div className="profile-info">
-                  <span>LinkedIn</span>
-                  <small>Connect with me</small>
-                </div>
+    <div className="profile-info">
+      <span>LinkedIn</span>
+      <small>Connect with me</small>
+    </div>
 
-                <span className="profile-arrow">↗</span>
-              </a>
+    <span className="profile-arrow">↗</span>
+  </a>
 
-              {/* GitHub */}
-              <a
-                href="https://github.com/faraazzhaider786"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="profile-card"
-              >
-                <div className="profile-icon github-icon">
-                  GH
-                </div>
+  {/* GitHub */}
+  <a
+    href="https://github.com/faraazzhaider786"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="profile-card"
+  >
+    <div className="profile-icon github-icon">
+      <img
+        src={socialIcons.github}
+        alt="GitHub"
+      />
+    </div>
 
-                <div className="profile-info">
-                  <span>GitHub</span>
-                  <small>View my projects</small>
-                </div>
+    <div className="profile-info">
+      <span>GitHub</span>
+      <small>View my projects</small>
+    </div>
 
-                <span className="profile-arrow">↗</span>
-              </a>
+    <span className="profile-arrow">↗</span>
+  </a>
 
-              {/* Gmail */}
-              <a
-                href="mailto:haiderz.faraz@gmail.com"
-                className="profile-card"
-              >
-                <div className="profile-icon gmail-icon">
-                  @
-                </div>
+  {/* Gmail */}
+  <a
+    href="mailto:haiderz.faraz@gmail.com"
+    className="profile-card"
+  >
+    <div className="profile-icon gmail-icon">
+      <img
+        src={socialIcons.gmail}
+        alt="Gmail"
+      />
+    </div>
 
-                <div className="profile-info">
-                  <span>Email</span>
-                  <small>Send me a message</small>
-                </div>
+    <div className="profile-info">
+      <span>Email</span>
+      <small>Send me a message</small>
+    </div>
 
-                <span className="profile-arrow">↗</span>
-              </a>
+    <span className="profile-arrow">↗</span>
+  </a>
 
-            </div>
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/923192152362"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="profile-card"
+  >
+    <div className="profile-icon whatsapp-icon">
+      <img
+        src={socialIcons.whatsapp}
+        alt="WhatsApp"
+      />
+    </div>
+
+    <div className="profile-info">
+      <span>WhatsApp</span>
+      <small>Chat with me</small>
+    </div>
+
+    <span className="profile-arrow">↗</span>
+  </a>
+
+</div>
           </div>
         </div>
 
