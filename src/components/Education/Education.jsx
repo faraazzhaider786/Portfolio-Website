@@ -1,6 +1,8 @@
 import React from "react";
 import "./Education.css";
 
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+
 const Education = () => {
   return (
     <section className="education-section" id="education">
@@ -25,6 +27,8 @@ const Education = () => {
         <div className="education-timeline">
 
           {/* EDUCATION ITEM 1 */}
+
+          <ScrollAnimation delay={0}>
           <div className="education-item current">
 
             <div className="timeline-side">
@@ -71,9 +75,12 @@ const Education = () => {
 
             </div>
           </div>
+          </ScrollAnimation>
 
 
           {/* EDUCATION ITEM 2 */}
+
+          <ScrollAnimation delay={150}>
           <div className="education-item">
 
             <div className="timeline-side">
@@ -105,6 +112,7 @@ const Education = () => {
 
             </div>
           </div>
+          </ScrollAnimation>
 
 
         

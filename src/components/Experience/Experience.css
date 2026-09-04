@@ -168,6 +168,13 @@
   letter-spacing: 4px;
 }
 
+.section-heading {
+  font-size: 40px;
+  font-weight: 550;
+  line-height: 0.85;
+  letter-spacing: -2px;
+}
+
 /* =========================
    EXPERIENCE CARD
 ========================= */

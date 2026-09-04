@@ -1,5 +1,8 @@
 import React from "react";
 import "./Contact.css";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+import TypingText from "../TypingText/TypingText";
+import { Scroll } from "lucide-react";
 
 
 const socialIcons = {
@@ -32,11 +35,12 @@ const Contact = () => {
           <div className="contact-left-content">
             <p className="contact-subtitle">GET IN TOUCH</p>
 
-            <h2>
-              Let's
-              <br />
-              Connect.
-            </h2>
+            <TypingText
+              text="Let's Connect."
+              speed={70}
+              lineBreak={true}
+              className="section-heading"
+            />
 
             <p className="contact-description">
               Have a project in mind, an opportunity, or just want to
@@ -51,17 +55,18 @@ const Contact = () => {
             <div className="social-profiles">
 
   {/* LinkedIn */}
-  <a
-    href="https://www.linkedin.com/in/faraazzhaider786/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="profile-card"
-  >
-    <div className="profile-icon linkedin-icon">
-      <img
-        src={socialIcons.linkedin}
-        alt="LinkedIn"
-      />
+  <ScrollAnimation delay={200}>
+    <a
+      href="https://www.linkedin.com/in/faraazzhaider786/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="profile-card"
+    >
+      <div className="profile-icon linkedin-icon">
+        <img
+          src={socialIcons.linkedin}
+          alt="LinkedIn"
+        />
     </div>
 
     <div className="profile-info">
@@ -71,11 +76,13 @@ const Contact = () => {
 
     <span className="profile-arrow">↗</span>
   </a>
+  </ScrollAnimation>
 
   {/* GitHub */}
-  <a
-    href="https://github.com/faraazzhaider786"
-    target="_blank"
+  <ScrollAnimation delay={400}>
+    <a
+      href="https://github.com/faraazzhaider786"
+      target="_blank"
     rel="noopener noreferrer"
     className="profile-card"
   >
@@ -93,17 +100,19 @@ const Contact = () => {
 
     <span className="profile-arrow">↗</span>
   </a>
-
+  </ScrollAnimation>
   {/* Gmail */}
-  <a
-    href="mailto:haiderz.faraz@gmail.com"
-    className="profile-card"
-  >
-    <div className="profile-icon gmail-icon">
-      <img
-        src={socialIcons.gmail}
-        alt="Gmail"
-      />
+
+  <ScrollAnimation delay={600}>
+    <a
+      href="mailto:haiderz.faraz@gmail.com"
+      className="profile-card"
+    >
+      <div className="profile-icon gmail-icon">
+        <img
+          src={socialIcons.gmail}
+          alt="Gmail"
+        />
     </div>
 
     <div className="profile-info">
@@ -113,12 +122,13 @@ const Contact = () => {
 
     <span className="profile-arrow">↗</span>
   </a>
-
+  </ScrollAnimation>
   {/* WhatsApp */}
-  <a
-    href="https://wa.me/923192152362"
-    target="_blank"
-    rel="noopener noreferrer"
+  <ScrollAnimation delay={800}>
+    <a
+      href="https://wa.me/923192152362"
+      target="_blank"
+      rel="noopener noreferrer"
     className="profile-card"
   >
     <div className="profile-icon whatsapp-icon">
@@ -135,14 +145,14 @@ const Contact = () => {
 
     <span className="profile-arrow">↗</span>
   </a>
-
+  </ScrollAnimation>
 </div>
           </div>
         </div>
 
         {/* RIGHT SIDE */}
         <div className="contact-right">
-
+        <ScrollAnimation delay={200}>
           <div className="contact-form-wrapper">
 
             <p className="form-subtitle">CONTACT ME</p>
@@ -200,6 +210,7 @@ const Contact = () => {
             </form>
 
           </div>
+          </ScrollAnimation>
 
         </div>
 

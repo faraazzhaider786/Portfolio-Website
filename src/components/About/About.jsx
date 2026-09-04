@@ -1,5 +1,8 @@
 import React from "react";
 import "./About.css";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+import TypingText from "../TypingText/TypingText";
+import { Scroll } from "lucide-react";
 
 const About = () => {
   return (
@@ -7,6 +10,7 @@ const About = () => {
       <div className="about-container">
 
         {/* LEFT - ABSTRACT DESIGN */}
+        
         <div className="about-visual">
 
           <div className="about-large-circle"></div>
@@ -24,16 +28,19 @@ const About = () => {
               &lt;/&gt;
             </div>
 
-            <p>ABOUT<br />ME</p>
+          <TypingText text="ABOUT ME" speed={100} lineBreak={true} className="section-heading" />
           </div>
 
           <div className="about-line line-one"></div>
           <div className="about-line line-two"></div>
 
         </div>
+        
 
 
         {/* RIGHT - CONTENT */}
+
+        <ScrollAnimation type="right" className="hero-content-animation">
         <div className="about-content">
 
           <p className="about-subtitle">ABOUT ME</p>
@@ -68,26 +75,35 @@ const About = () => {
           {/* HIGHLIGHTS */}
           <div className="about-highlights">
 
-            <div className="about-highlight">
+           <ScrollAnimation delay={150}>
+             <div className="about-highlight">
               <strong>05+</strong>
               <span>Semesters</span>
             </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation delay={300}>
 
             <div className="about-highlight">
               <strong>WEB</strong>
               <span>Development</span>
             </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation delay={450}>
 
             <div className="about-highlight">
               <strong>AWS</strong>
               <span>Cloud</span>
             </div>
+            </ScrollAnimation>
 
           </div>
 
 
 
         </div>
+        </ScrollAnimation>
 
       </div>
     </section>

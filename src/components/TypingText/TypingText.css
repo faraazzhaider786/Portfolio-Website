@@ -1,0 +1,29 @@
+.typing-text {
+  display: inline-block;
+}
+
+.typing-line {
+  display: block;
+}
+
+.typing-line:first-child {
+  margin-bottom: 20px;
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

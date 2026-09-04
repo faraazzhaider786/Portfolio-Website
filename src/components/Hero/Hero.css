@@ -140,6 +140,13 @@
   color: #222222;
 }
 
+.section-heading {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -2px;
+}
+
 
 /* =========================================
    DESCRIPTION

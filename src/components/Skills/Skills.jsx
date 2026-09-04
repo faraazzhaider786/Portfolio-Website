@@ -1,5 +1,6 @@
 import React from "react";
 import "./Skills.css";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
 const skills = [
   {
@@ -85,27 +86,27 @@ const Skills = () => {
         </div>
 
 
-        <div className="skills-grid">
-
-          {skills.map((skill) => (
-            <div className="skill-card" key={skill.name}>
-
-              <div className="skill-icon">
-                <img
-                  src={skill.icon}
-                  alt={`${skill.name} logo`}
-                />
-              </div>
-
-              <h3>{skill.name}</h3>
-
-              <span>{skill.category}</span>
-
-            </div>
-          ))}
-
+       <div className="skills-grid">
+  {skills.map((skill, index) => (
+    <ScrollAnimation
+      key={skill.name}
+      delay={index * 120}
+    >
+      <div className="skill-card">
+        <div className="skill-icon">
+          <img
+            src={skill.icon}
+            alt={`${skill.name} logo`}
+          />
         </div>
 
+        <h3>{skill.name}</h3>
+
+        <span>{skill.category}</span>
+      </div>
+    </ScrollAnimation>
+  ))}
+</div>
       </div>
 
     </section>

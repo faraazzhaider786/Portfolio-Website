@@ -53,6 +53,13 @@
   transform: translateY(-6px);
 }
 
+.section-heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 0;
+  letter-spacing: -2px;
+}
+
 
 /* ========================================
    LARGE CIRCLE

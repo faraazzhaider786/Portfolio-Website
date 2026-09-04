@@ -1,5 +1,7 @@
 import React from "react";
 import "./Experience.css";
+import TypingText from "../TypingText/TypingText";
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
 const Experience = () => {
   return (
@@ -39,18 +41,20 @@ const Experience = () => {
                 &lt;/&gt;
               </div>
 
-              <h3>
-                SOFTWARE
-                <br />
-                ENGINEERING
-              </h3>
-
+              <TypingText
+                text="SOFTWARE ENGINEERING"
+                speed={70}
+                lineBreak={true}
+                className="section-heading"
+              />
+              <br></br>
               <p>INTERNSHIP</p>
             </div>
           </div>
 
           {/* Experience Card */}
-          <div className="experience-card">
+          <ScrollAnimation type="right" className="experience-card-animation">
+            <div className="experience-card">
 
             <div className="experience-card-header">
               <div>
@@ -122,17 +126,18 @@ const Experience = () => {
               <h4>TECHNOLOGIES USED</h4>
 
               <div className="technology-tags">
-                <span>React.js</span>
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>MongoDB</span>
+                <ScrollAnimation delay={100}><span>React.js</span></ScrollAnimation>
+                <ScrollAnimation delay={200}><span>JavaScript</span></ScrollAnimation>
+                <ScrollAnimation delay={300}><span>HTML</span></ScrollAnimation>
+                <ScrollAnimation delay={400}><span>CSS</span></ScrollAnimation>
+                <ScrollAnimation delay={500}><span>Node.js</span></ScrollAnimation>
+                <ScrollAnimation delay={600}><span>Express.js</span></ScrollAnimation>
+                <ScrollAnimation delay={700}><span>MongoDB</span></ScrollAnimation>
               </div>
             </div>
 
           </div>
+          </ScrollAnimation>
         </div>
 
       </div>

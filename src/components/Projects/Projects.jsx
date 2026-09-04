@@ -5,6 +5,8 @@ import portfolioWebsite from "../../assets/portfolio-website.png";
 import travelAndTourism from "../../assets/pak-travel-and-tourism.png";
 import pacmanGame from "../../assets/pacman-game.jpg";
 
+import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
+
 const projects = [
   {
     title: "Pakistan Travel and Tourism Portal",
@@ -160,91 +162,64 @@ const Projects = () => {
 
         <div className="projects-grid">
 
-          {projects.map((project, index) => (
+         {projects.map((project, index) => (
+  <ScrollAnimation
+    key={index}
+    delay={index * 120}
+  >
+    <article className="project-card">
 
-            <article
-              className="project-card"
-              key={index}
-            >
+      <div className="project-image-container">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="project-image"
+        />
 
-              {/* Project Image */}
+        <div className="project-number">
+          {String(index + 1).padStart(2, "0")}
+        </div>
+      </div>
 
-              <div className="project-image-container">
+      <div className="project-content">
+        <h3>{project.title}</h3>
 
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project-image"
-                />
+        <p>{project.description}</p>
 
-                <div className="project-number">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-
-              </div>
-
-
-              {/* Project Content */}
-
-              <div className="project-content">
-
-                <h3>
-                  {project.title}
-                </h3>
-
-                <p>
-                  {project.description}
-                </p>
-
-
-                {/* Technologies */}
-
-                <div className="project-technologies">
-
-                  {project.technologies.map(
-                    (technology, techIndex) => (
-
-                      <span key={techIndex}>
-                        {technology}
-                      </span>
-
-                    )
-                  )}
-
-                </div>
-
-
-                {/* Buttons */}
-
-                <div className="project-buttons">
-
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-live-button"
-                  >
-                    <span>Live Demo</span>
-                    <span className="button-arrow">↗</span>
-                  </a>
-
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-github-button"
-                  >
-                    <span>GitHub</span>
-                    <span className="github-symbol">GH</span>
-                  </a>
-
-                </div>
-
-              </div>
-
-            </article>
-
+        <div className="project-technologies">
+          {project.technologies.map((technology, techIndex) => (
+            <span key={techIndex}>
+              {technology}
+            </span>
           ))}
+        </div>
+
+        <div className="project-buttons">
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-live-button"
+          >
+            <span>Live Demo</span>
+            <span className="button-arrow">↗</span>
+          </a>
+
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-github-button"
+          >
+            <span>GitHub</span>
+            <span className="github-symbol">GH</span>
+          </a>
+        </div>
+      </div>
+
+    </article>
+  </ScrollAnimation>
+))}
 
         </div>
 
