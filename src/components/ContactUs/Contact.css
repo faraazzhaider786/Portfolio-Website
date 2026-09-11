@@ -528,7 +528,7 @@
   }
 
   .contact-left h2 {
-    font-size: 52px;
+    font-size: clamp(42px, 13vw, 58px);
   }
 
   .contact-description {
@@ -540,7 +540,12 @@
   }
 
   .contact-form-wrapper h3 {
-    font-size: 34px;
+    font-size: clamp(32px, 9vw, 40px);
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px;
   }
 
   .profile-card:hover {

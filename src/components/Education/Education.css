@@ -510,7 +510,7 @@
   }
 
   .education-header h2 {
-    font-size: 48px;
+    font-size: clamp(42px, 13vw, 52px);
   }
 
   .education-intro {
@@ -523,6 +523,13 @@
     gap: 15px;
 
     margin-bottom: 30px;
+  }
+
+  .education-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
   }
 
   .education-timeline::before {

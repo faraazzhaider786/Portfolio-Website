@@ -261,8 +261,17 @@
     padding: 80px 20px;
   }
 
+  .skills-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
   .skills-heading {
+    width: 100%;
     margin-bottom: 40px;
+    padding: 18px 16px 22px;
   }
 
   .skills-grid {
@@ -283,6 +292,13 @@
 ========================================= */
 
 @media (max-width: 450px) {
+
+  .skills-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
 
   .skills-grid {
     grid-template-columns: 1fr 1fr;

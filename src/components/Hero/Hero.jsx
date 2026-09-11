@@ -32,7 +32,7 @@ const Hero = () => {
 
             {/* Main Heading */}
             <TypingText
-                text="Hello, My name is FARAAZ HAIDER."
+                text="Hello, My Name is FARAAZ HAIDER."
                 speed={70}
                 lineBreak={true}
                 className="section-heading"

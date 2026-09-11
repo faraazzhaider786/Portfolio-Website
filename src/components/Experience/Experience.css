@@ -393,6 +393,13 @@
     gap: 30px;
   }
 
+  .experience-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
   .experience-visual {
     min-height: 320px;
     border-radius: 22px;
@@ -416,6 +423,10 @@
   .experience-card-header {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .experience-duration {
+    align-self: flex-start;
   }
 
   .experience-card h3 {
