@@ -4,6 +4,7 @@ import freshAndDirect from "../../assets/fresh-and-direct.png";
 import portfolioWebsite from "../../assets/portfolio-website.png";
 import travelAndTourism from "../../assets/pak-travel-and-tourism.png";
 import pacmanGame from "../../assets/pacman-game.jpg";
+import researchProjectManagement from "../../assets/Research-Project.png";
 
 import ScrollAnimation from "../ScrollAnimation/ScrollAnimation";
 
@@ -28,16 +29,21 @@ const projects = [
   {
     title: "Research Project Management System",
     description:
-      "A location-based tourism feature that allows users to discover attractions near their current location and navigate to selected places.",
-    image: "/projects/nearby.png",
+      "An authenticated web application for managing PCSIR research projects, reference data, approval workflows, employee progress reporting, and project deadline extensions.",
+    image: researchProjectManagement,
     technologies: [
       "React.js",
       "JavaScript",
-      "Geolocation API",
-      "Google Maps",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+      "JWT authentication",
+      "Password hashing with bcryptjs",
+      
     ],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/faraazzhaider786/Research-Project-Management-System-PCSIR-.git",
   },
 
   {
@@ -49,6 +55,9 @@ const projects = [
       "HTML",
       "CSS",
       "JavaScript",
+      "Git",
+      "Github",
+
     
     ],
     liveLink: "https://fresh-and-direct.vercel.app/",
@@ -87,20 +96,7 @@ const projects = [
   },
 
 
-  {
-    title: "Web Application",
-    description:
-      "A responsive web application developed to practice modern frontend development and create a clean user experience.",
-    image: "/projects/project6.png",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.js",
-    ],
-    liveLink: "#",
-    githubLink: "#",
-  },
+  
 ];
 
 const Projects = () => {
